@@ -1,0 +1,3 @@
+[submodule "UI"]
+	path = UI
+	url = https://gitlab.com/Tamakaku/Kronus-ui.git

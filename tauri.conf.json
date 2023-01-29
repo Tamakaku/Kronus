@@ -1,0 +1,66 @@
+{
+  "package": {
+    "productName": "Kronus",
+    "version": "0.1.0"
+  },
+  "build": {
+    "beforeBuildCommand": "yarn vite build",
+    "beforeDevCommand": "yarn vite --port 8080",
+    "devPath": "http://localhost:8080",
+    "distDir": "UI/dist"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": true
+    },
+    "bundle": {
+      "identifier": "kronus",
+      "category": "Utility",
+      "shortDescription": "",
+      "longDescription": "",
+      "copyright": "",
+      "active": true,
+      "externalBin": [],
+      "targets": "all",
+      "resources": [],
+      "icon": [
+        "Resources/Icons/32x32.png",
+        "Resources/Icons/128x128.png",
+        "Resources/Icons/128x128@2x.png",
+        "Resources/Icons/icon.icns",
+        "Resources/Icons/icon.ico"
+      ],
+      "deb": {
+        "depends": []
+      },
+      "macOS": {
+        "entitlements": null,
+        "exceptionDomain": "",
+        "frameworks": [],
+        "providerShortName": null,
+        "signingIdentity": null
+      },
+      "windows": {
+        "certificateThumbprint": null,
+        "digestAlgorithm": "sha256",
+        "timestampUrl": ""
+      }
+    },
+    "windows": [
+      {
+        "title": "Kronus",
+        "height": 625,
+        "width": 375,
+        "decorations": false,
+        "resizable": false,
+        "fullscreen": false
+      }
+    ],
+    "security": {
+      "csp": null
+    },
+    "updater": {
+      "active": false
+    }
+  }
+}
